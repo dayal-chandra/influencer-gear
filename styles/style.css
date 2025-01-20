@@ -1,4 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
+}
+
+body {
+  font-family: Poppins;
+}
+
+header {
+  max-width: 1230px;
+  margin: auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0px;
+}
+
+nav h1 {
+  color: rgb(58, 58, 58);
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  list-style: none;
+}
+
+nav li {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+}
+
+nav li:hover {
+  background-color: #87878768;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000;
+}
+
+.menu {
+  display: none;
+}
+
+/* BANNER */
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.banner-title {
+  width: 50%;
+}
+
+.banner-title h1 {
+  color: rgb(58, 58, 58);
+  font-family: Poppins;
+  font-size: 3.25rem;
+  font-weight: 700;
+  padding-bottom: 16px;
+}
+
+.banner-title p {
+  color: rgb(58, 58, 58);
+  font-family: Poppins;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 24px;
+  padding-right: 30%;
+}
+
+.banner-title button {
+  border: none;
+  border-radius: 41px;
+  background: rgb(224, 44, 109);
+  color: #fff;
+  padding: 10px 15px;
+  margin-top: 16px;
+}
+
+.banner-img {
+  background-image: url("../images/Circle-design.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* SPONSOR */
+.sponsor {
+  max-width: 1110px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 70px 20px 100px;
+}
+
+/* RESPONSIVE LAYOUT */
+
+@media screen and (max-width: 576px) {
+  header {
+    padding: 0px 25px;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  .menu {
+    display: block;
+  }
+
+  .banner {
+    flex-direction: column-reverse;
+  }
+
+  .banner-title {
+    width: 100%;
+    text-align: center;
+    margin: 50px 0px;
+  }
+
+  .banner-title p {
+    padding: 15px 0px;
+  }
+
+  .sponsor {
+    flex-wrap: wrap;
+  }
 }
