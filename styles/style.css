@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 * {
   margin: 0;
@@ -18,7 +19,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0px;
+  padding: 60px 0px;
 }
 
 nav h1 {
@@ -106,6 +107,88 @@ nav a {
   align-items: center;
   gap: 20px;
   padding: 70px 20px 100px;
+}
+
+/* COLLECTION */
+
+.collection {
+  max-width: 1047px;
+  margin: auto;
+}
+
+.collection > h2 {
+  color: rgb(58, 58, 58);
+  font-family: Poppins;
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.collection-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding-bottom: 60px;
+}
+
+.collection-card {
+  width: 330px;
+  height: 476px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+  background: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+
+.collection-card h2 {
+  color: rgb(24, 25, 31);
+  font-family: Poppins;
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-top: 16px;
+}
+
+.collection-card h3 {
+  color: rgba(0, 0, 0, 0.87);
+  font-family: Inter;
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding: 10px 0px;
+}
+
+.star {
+  display: flex;
+  align-items: center;
+}
+
+.star img {
+  width: 24px;
+}
+
+.star p {
+  font-size: 20px;
+}
+
+.collection-card p {
+  color: rgb(120, 120, 133);
+  font-family: Inter;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 143%;
+  padding-top: 6px;
+  padding-right: 20%;
+}
+
+.collection-btn {
+  border: none;
+  background-color: #fff;
+  color: rgba(224, 44, 109, 0.87);
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 700;
 }
 
 /* RESPONSIVE LAYOUT */
